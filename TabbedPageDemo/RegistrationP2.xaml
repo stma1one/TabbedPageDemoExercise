@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageDemo.RegistrationP2" Title="Student SignUp(2)">
+
+    <StackLayout BackgroundColor="LightCyan">
+        <Label x:Name="LblClass" Text="Class:"></Label>
+        <Entry x:Name="EntClass" Placeholder="Class " Text="{Binding Class}" />
+        <Label x:Name="LblClassNo" Text="Class Number:"></Label>
+        <Entry x:Name="EntClassNo" Placeholder="Class Number " Text="{Binding ClassNo}" />
+        <Label x:Name="LblCLoveMath"  Text="Love Math:"></Label>
+        <Switch x:Name="SwMath" OnColor="Orange"
+        ThumbColor="Green" IsToggled="{Binding LikeMath}"  />
+        <Label x:Name="LblCLoveCs" Text="Love Computer Science:"></Label>
+        <Switch x:Name="SwCs"  OnColor="Orange" ThumbColor="Green" IsToggled="{Binding LikeCs}" />
+      
+
+
+    </StackLayout>
+
+</ContentPage>

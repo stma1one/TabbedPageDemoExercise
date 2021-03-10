@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageDemo.RegistrationP3" Title="Student SignUp(3)">
+
+    <StackLayout BackgroundColor="LightCyan">
+
+        <Label x:Name="LblName" FontSize="18">
+            <Label.FormattedText>
+            <FormattedString>
+                    <Span Text="Name:"></Span>
+                    <Span Text="{Binding Name}"/>
+            </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+
+        <Label x:Name="LblAddress" FontSize="18">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Address:"></Span>
+                    <Span Text="{Binding Address}"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label x:Name="LblBirth" Text="BirthDate:" FontSize="18"></Label>
+        <DatePicker x:Name="DpBirthdate"  Date="{Binding BirthDate}" Format="dd/MM/yyyy"  IsEnabled="False" FontSize="20"></DatePicker>
+        <Label x:Name="EntClass" FontSize="18">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Class:"  ></Span>
+                    <Span Text="{Binding Class}"/>
+                    <Span Text="{Binding ClassNo}"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label x:Name="LblCLoveMath" FontSize="18" Text="Love Math:"></Label>
+        <Switch x:Name="SwMath"  IsToggled="{Binding LikeMath}" OnColor="Orange"
+        ThumbColor="Green" IsEnabled="False"  />
+        <Label x:Name="LblCLovCs" FontSize="18" Text="Love Computer Science:"></Label>
+        <Switch x:Name="SwCs"  IsToggled="{Binding LikeCs}" OnColor="Orange"
+        ThumbColor="Green" IsEnabled="False"  />
+      
+
+
+    </StackLayout>
+
+</ContentPage>

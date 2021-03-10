@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageDemo.RegistrationP1" Title="Student SignUp(1)" >
+
+    <StackLayout BackgroundColor="LightCyan">
+        <Label x:Name="LblFName" Text="Student's Name:"></Label>
+        <Entry x:Name="EntFName" Placeholder="Type full Name" Text="{Binding Name}" />
+        <Label x:Name="LblAddress" Text="Student Address:"></Label>
+        <Entry x:Name="EntAddress" Placeholder="address" Text="{Binding Address}" />
+        <DatePicker Date="{Binding BirthDate}"  x:Name="DpBirthDate" />
+        
+
+
+    </StackLayout>
+
+</ContentPage>
